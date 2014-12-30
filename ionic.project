@@ -1,0 +1,11 @@
+{
+  "name": "ClashOn",
+  "app_id": "com.ggisland.clashon",
+  "gulpStartupTasks": [
+    "default"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

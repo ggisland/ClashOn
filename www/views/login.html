@@ -1,0 +1,24 @@
+﻿<ion-view title="Login">
+  <ion-nav-buttons side="left">
+    <a class="button button-icon icon ion-home" ui-sref="main.home"></a>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <form name="vm.form" novalidate>
+      <ion-list>
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" placeholder="" ng-model="vm.user.username" required="" tabindex="1" ng-focus="clearError()">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="vm.user.password" required="" tabindex="2" ng-focus="clearError()">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;">
+        <div class="assertive text-center padding-top" ng-show="vm.error" ng-bind-html="vm.error"></div>
+      </div>
+      <button type="submit" class="button button-stable button-block" ng-click="doLogin()" ng-disabled="vm.form.$invalid">Log in</button>
+      <a ui-sref="main.signup" class="button button-positive button-clear button-block">Or create an account</a>
+    </form>
+  </ion-content>
+</ion-view>

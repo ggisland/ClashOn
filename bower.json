@@ -1,0 +1,8 @@
+{
+  "name": "ClashOn",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.13",
+	"parse-angular-patch": ""
+  }
+}
